@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1f4d3f">
+<title>Etalon Run · Confidentialité</title>
+<link rel="icon" href="etalon-run-icone.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..800&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* Page de confidentialité de l'appli : ce qui est gardé, pourquoi, qui le voit, comment tout supprimer. */
+:root { --bg: #f1f4f0; --surface: #ffffff; --ink: #15201b; --muted: #586860; --line: #d3dcd5; --mat: #1f4d3f; --tape: #f2c230; color-scheme: light; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #0e1814; --surface: #15231e; --ink: #e6eee8; --muted: #9bb0a5; --line: #2a3c35; --mat: #2c6a57; color-scheme: dark; } }
+:root[data-theme="dark"] { --bg: #0e1814; --surface: #15231e; --ink: #e6eee8; --muted: #9bb0a5; --line: #2a3c35; --mat: #2c6a57; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: 'Archivo', system-ui, Arial, sans-serif; font-size: 16.5px; line-height: 1.55; }
+header { background: #1f4d3f; color: #eef5f0; }
+header .wrap { padding-block: 26px 22px; }
+.tape { height: 14px; background: repeating-linear-gradient(90deg, #1b1a10 0 2px, #f2c230 2px 10px); }
+.wrap { max-width: 720px; margin-inline: auto; padding-left: 16px; padding-right: 16px; }
+.eyebrow { font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #f2c230; font-weight: 600; }
+h1 { font-weight: 800; font-stretch: 80%; font-size: 38px; line-height: 1.05; margin: 10px 0 0; }
+main { padding-block: 24px 48px; }
+h2 { font-weight: 800; font-stretch: 85%; font-size: 22px; margin: 26px 0 8px; color: var(--mat); }
+p, li { max-width: 66ch; }
+ul { padding-left: 22px; }
+a { color: var(--mat); }
+.meta { color: var(--muted); font-size: 14px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="eyebrow">Etalon Run</div><h1>Confidentialité</h1></div><div class="tape" aria-hidden="true"></div></header>
+<main class="wrap">
+  <p>Etalon Run compare le pied de chaque coureur à l'intérieur mesuré des chaussures de running et de trail, pour conseiller le bon modèle et la bonne pointure. Cette page dit ce que l'appli garde, pourquoi, qui le voit, et comment tout supprimer.</p>
+
+  <h2>Sans compte</h2>
+  <p>Tu peux consulter l'appli sans compte. Les mesures de pied et les paires que tu saisis sans compte restent sur ton téléphone, dans ton navigateur : rien n'est envoyé.</p>
+
+  <h2>Avec un compte</h2>
+  <p>Tu te connectes sans mot de passe, avec un code reçu par e-mail ou avec ton compte Google. Nous gardons alors :</p>
+  <ul>
+    <li><strong>ton adresse e-mail</strong>, pour te connecter. Avec Google, nous recevons seulement ton nom et ton adresse e-mail, rien d'autre de ton compte Google ;</li>
+    <li><strong>les mesures de tes pieds</strong>, tes préférences (maintien, place devant les orteils, chaussettes, forme du pied) ;</li>
+    <li><strong>tes paires</strong> : modèle, pointure, ton ressenti au pied et en courant, les kilomètres et le terrain.</li>
+  </ul>
+  <p>Ces données servent à te conseiller des modèles et des pointures, et à améliorer les conseils d'Etalon Run. Elles ne sont ni vendues, ni utilisées pour de la publicité.</p>
+
+  <h2>Qui les voit</h2>
+  <p>Toi seul les vois et les modifies. L'équipe Etalon Run peut les lire pour analyser et améliorer la méthode. Si tu coches « Mes données servent aussi, anonymement, aux conseils des autres coureurs », elles servent aussi, sans ton nom ni ton e-mail, aux conseils donnés aux autres. Tu peux décocher à tout moment.</p>
+  <p>Les données sont hébergées par Supabase (base de données) ; les e-mails de connexion partent de l'adresse etalon.run@gmail.com.</p>
+
+  <h2>Tout supprimer</h2>
+  <p>Dans l'onglet Pied, le bouton « Supprimer mon compte » efface ton compte et toutes tes données, définitivement. Tu peux aussi le demander à <a href="mailto:etalon.run@gmail.com">etalon.run@gmail.com</a>.</p>
+
+  <h2>Une question</h2>
+  <p>Écris à <a href="mailto:etalon.run@gmail.com">etalon.run@gmail.com</a>.</p>
+
+  <p class="meta">Version du 17 octobre 2026 · <a href="./">Retour à l'appli</a></p>
+</main>
+</body>
+</html>
