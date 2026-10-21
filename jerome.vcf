@@ -1,0 +1,9 @@
+BEGIN:VCARD
+VERSION:2.1
+N;CHARSET=UTF-8:;Jérôme;;;
+FN;CHARSET=UTF-8:Jérôme
+ORG;CHARSET=UTF-8:Etalon Run
+TITLE;CHARSET=UTF-8:Architecte du millimètre - Cofondateur
+EMAIL;INTERNET:etalon.run@gmail.com
+URL:https://etalon-run.github.io/etalon/
+END:VCARD

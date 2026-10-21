@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1f4d3f">
+<meta name="robots" content="noindex, nofollow">
+<title>Paul · Etalon Run</title>
+<link rel="icon" href="etalon-run-icone.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="etalon-run-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root {
+  --bg: #0e1814; --mat: #1f4d3f; --mat-grid: rgba(255,255,255,.08); --on-mat: #eef5f0; --soft: #cfe0d6;
+  --tape: #f2c230; --tape-ink: #1b1a10; --paper: #f7f8f5; --ink: #15201b; --muted: #586860;
+  --display: 'Archivo', 'Arial Narrow', Arial, sans-serif; --mono: 'IBM Plex Mono', ui-monospace, Menlo, monospace;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { min-height: 100svh; background: var(--bg); color: var(--on-mat); font-family: var(--display); display: grid; place-items: center; padding: 24px 16px; }
+.card { width: 100%; max-width: 400px; border-radius: 22px; overflow: hidden; background: var(--mat); box-shadow: 0 24px 60px rgba(0,0,0,.45); }
+.top { position: relative; padding: 28px 26px 30px;
+  background-image: linear-gradient(var(--mat-grid) 1px, transparent 1px), linear-gradient(90deg, var(--mat-grid) 1px, transparent 1px);
+  background-size: 22px 22px; }
+.brand { font-family: var(--mono); font-size: 13px; letter-spacing: 4px; text-transform: uppercase; color: var(--tape); font-weight: 600; }
+h1 { margin: 26px 0 0; font-size: 64px; line-height: .95; font-weight: 800; font-stretch: 75%; letter-spacing: .5px; }
+.title { margin: 10px 0 0; font-size: 30px; font-weight: 800; font-stretch: 80%; color: var(--tape); }
+.role { margin: 4px 0 0; font-family: var(--mono); font-size: 14px; color: var(--soft); letter-spacing: 1px; text-transform: uppercase; }
+.tape { height: 18px; background: repeating-linear-gradient(90deg, var(--tape-ink) 0 2px, var(--tape) 2px 11px); border-top: 2px solid var(--tape-ink); }
+.body { background: var(--paper); color: var(--ink); padding: 22px 26px 26px; display: flex; flex-direction: column; gap: 14px; }
+.tagline { margin: 0; font-size: 19px; font-weight: 700; font-stretch: 90%; }
+.lede { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.45; }
+.actions { display: flex; flex-direction: column; gap: 10px; margin-top: 4px; }
+.btn { display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 50px; border-radius: 12px; font: 700 16px var(--display); text-decoration: none; border: 2px solid var(--ink); color: var(--ink); background: transparent; cursor: pointer; }
+.btn.primary { background: var(--tape); border-color: var(--tape); color: var(--tape-ink); }
+.help { margin: -2px 0 0; font-size: 13px; color: var(--muted); line-height: 1.4; }
+.btn[hidden], .help[hidden], textarea[hidden] { display: none; }
+.btn svg { width: 20px; height: 20px; flex: none; }
+.projet { display: flex; flex-direction: column; gap: 10px; padding: 14px 16px; border-radius: 12px; background: #eaf0ec; }
+.projet h2 { margin: 0; font-family: var(--mono); font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: var(--mat); font-weight: 600; }
+.projet dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 8px 12px; font-size: 14.5px; line-height: 1.4; }
+.projet dt { font-weight: 800; color: var(--mat); }
+.projet dd { margin: 0; color: #2c3a33; }
+</style>
+</head>
+<body>
+<main class="card">
+  <section class="top">
+    <img src="etalon-run-symbole.svg" alt="" width="52" height="75" style="position:absolute;top:24px;right:26px">
+    <div class="brand">Etalon Run</div>
+    <h1>Paul</h1>
+    <p class="title">Maître Étalon</p>
+    <p class="role">Cofondateur</p>
+  </section>
+  <div class="tape" aria-hidden="true"></div>
+  <section class="body">
+    <p class="tagline">La bonne chaussure, au millimètre.</p>
+    <div class="projet">
+      <h2>Le projet</h2>
+      <p style="margin:0;font-size:16px;line-height:1.45;color:#2c3a33">Trouvez la chaussure faite pour votre pied, grâce à une appli conçue par des coureurs, pour les coureurs.</p>
+      <p style="margin:0;font-size:15px;line-height:1.45;color:var(--muted)">Nous mesurons l'intérieur des chaussures ; vous, votre pied.</p>
+    </div>
+    <div class="actions">
+      <a class="btn primary" id="vcf" href="paul.vcf" download="Paul-Etalon-Run.vcf" type="text/vcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="4"/><path d="M2 21c0-3.9 3.1-7 7-7s7 3.1 7 7"/><path d="M19 8v6M16 11h6"/></svg>Ajouter aux contacts</a>
+      <button class="btn primary" type="button" id="share" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></svg><span>Partager ma carte</span></button>
+      <a class="btn" href="mailto:etalon.run@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>etalon.run@gmail.com</a>
+      <a class="btn" href="https://etalon-run.github.io/etalon/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17h18M5 17v-3M9 17v-5M13 17v-3M17 17v-5"/></svg>Découvrir l'appli</a>
+    </div>
+    <textarea id="manual" readonly hidden rows="3" aria-label="Coordonnées à copier" style="width:100%;font:14px var(--display);padding:10px;border:2px solid var(--ink);border-radius:10px;resize:none"></textarea>
+    <p class="help" id="help">Sur iPhone, ouvrez cette page dans Safari pour ajouter le contact.</p>
+  </section>
+</main>
+<script>
+(function () {
+  var t = 'Paul · Maître Étalon · Cofondateur · Etalon Run\netalon.run@gmail.com\nhttps://etalon-run.github.io/etalon/';
+  // Copie qui passe aussi dans les navigateurs intégrés (Gmail, WhatsApp…) ; sinon, le texte s'affiche à copier à la main.
+  window.copyText = function (t, btn, okLabel) {
+    var ta = document.createElement('textarea'); ta.value = t; ta.setAttribute('readonly', ''); ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0';
+    document.body.appendChild(ta); ta.select(); ta.setSelectionRange(0, t.length);
+    var ok = false; try { ok = document.execCommand('copy'); } catch (e) {}
+    ta.remove();
+    var label = btn.querySelector('span'), old = label.textContent;
+    var done = function () { label.textContent = okLabel; setTimeout(function () { label.textContent = old; }, 2500); };
+    var show = function () { var box = document.getElementById('manual'); box.hidden = false; box.value = t; box.focus(); box.select(); };
+    show();
+    if (ok) done(); else if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(t).then(done, function () {});
+  };
+})();
+</script>
+<script>
+(function () {
+  // Android : pas d'ajout de contact fiable depuis une page web ; on partage la carte à la place.
+  if (!/android/i.test(navigator.userAgent)) return;
+  document.getElementById('vcf').hidden = true; document.getElementById('help').hidden = true;
+  var b = document.getElementById('share'); b.hidden = false;
+  b.addEventListener('click', function () {
+    var data = { title: document.title, url: location.href.split('?')[0] };
+    if (navigator.share) navigator.share(data).catch(function () {});
+    else copyText(data.url, b, 'Lien copié');
+  });
+})();
+</script>
+</body>
+</html>
